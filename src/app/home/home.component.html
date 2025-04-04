@@ -2,12 +2,16 @@
 <input [(ngModel)] = "name">
 <p changecolor>name = {{name}}</p>
 
+
 <div>
     <button (click)="decreaseCount()">-</button>
     <span>{{count}}</span>
     <button (click)="increaseCount()">+</button>
 </div>
-<div *ngFor="let item of [1,2,3,4,5,6]">
+<div *ngFor="let item of array">
     <p>{{item}}</p>
 </div>
 
+<p>{{Mulekondareddy}}</p>
+<input [value]="value" (input)="getdata($event)">
+<p>{{value}}</p>

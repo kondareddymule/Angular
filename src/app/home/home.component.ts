@@ -11,7 +11,13 @@ import { FormsModule } from '@angular/forms';
 export class HomeComponent {
   name: any ="Reddy"
 
+  value: any  = "Hello"
+
   count:number = 0
+  Mulekondareddy: string = "Mule Konda Reddy"
+
+
+  array: number[] = [1,2,3,4,5,8,9,9]
   
   increaseCount() {
     if (this.count < 20) {
@@ -23,6 +29,10 @@ export class HomeComponent {
     if(this.count > 0) {
       this.count--
     }
+  }
+
+  getdata(e: any) {
+    this.value = e.target.value
   }
 }
 
